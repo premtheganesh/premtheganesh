@@ -8,7 +8,6 @@ I’m passionate about exploring the frontiers of **large language models (LLMs)
 - **LinkedIn**: [linkedin.com/in/premtheganesh](https://linkedin.com/in/premtheganesh)
 - **GitHub**: [github.com/premtheganesh](https://github.com/premtheganesh)
 - **Email**: premtheg@asu.edu
-- **Phone**: (623) 275-1404
 
 ## Tech Stack
 
@@ -63,7 +62,7 @@ I’m passionate about exploring the frontiers of **large language models (LLMs)
 
 ## Projects
 Explore my key projects on GitHub:
-- **[Sentiment Analyzer for Twitter Data](https://github.com/premtheganesh/Twitter-Sentiment-Analysis)**: Developed a transformer-based sentiment analysis pipeline with 85% accuracy.
+- **[Sentiment Analyzer for Twitter Data](https://github.com/premtheganesh/Twitter-Sentiment-Analysis)**: Developed a transformer-based sentiment analysis pipeline with 93% accuracy.
 - **[Driver Drowsiness Detection](https://github.com/premtheganesh/drowsinessdetection)**: Led a team to build a 95%-accurate real-time drowsiness detection system using CNN and OpenCV.
 - **[Image Captioning with Fine-Tuning](https://github.com/premtheganesh/Image_Captioning)**: Fine-tuned Llama-4 vision models and custom MobileNetV3 for Flickr8k.
 - **[Retail Customer Segmentation](https://github.com/premtheganesh/Online_Retail_Customer_Segmentation)**: Implemented RFM analysis and clustering (K-Means, Hierarchical, DBSCAN).
