@@ -55,6 +55,9 @@ I’m passionate about exploring the frontiers of **large language models (LLMs)
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat)](https://aws.amazon.com)
 [![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat)](https://azure.microsoft.com)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat)](https://docker.com)
+[![Groq](https://img.shields.io/badge/Groq-00A1D6?style=flat)](https://groq.com) 
+[![Hugging Face Datasets](https://img.shields.io/badge/Datasets-FFD21E?style=flat)](https://huggingface.co/docs/datasets) 
+[![NLTK](https://img.shields.io/badge/NLTK-4B0082?style=flat)](https://nltk.org) 
 
 
 
