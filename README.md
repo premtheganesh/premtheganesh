@@ -1,4 +1,4 @@
-# Hi, I'm Prem Ganesh Maddirala!
+# Hey, I'm Prem Ganesh Maddirala!
 
 ## About Me
 I’m a driven graduate student pursuing a **Master of Science in Data Science and Analytics** with a specialization in Computing & Decision Analytics at Arizona State University (Expected June 2026), following a **Bachelor of Engineering in Computer Science** from Birla Institute of Technology & Sciences, Dubai (June 2022). With a robust background in data analytics, machine learning, automation, and digital transformation, I transform complex challenges into innovative, user-centric solutions.
