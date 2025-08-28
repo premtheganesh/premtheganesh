@@ -45,20 +45,17 @@ I’m passionate about exploring the frontiers of **large language models (LLMs)
 [![Excel](https://img.shields.io/badge/Excel-217346?style=flat)](https://microsoft.com/excel)
 [![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=flat)](https://analytics.google.com)
 
-### Databases
+### Core Technical Stack
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat)](https://postgresql.org)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat)](https://mysql.com)
-
-### Cloud & Platforms
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat)](https://aws.amazon.com)
-[![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat)](https://azure.microsoft.com)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat)](https://docker.com)
-
-### Tools & IDEs
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat)](https://github.com)
 [![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat)](https://code.visualstudio.com)
 [![Jupyter Notebooks](https://img.shields.io/badge/Jupyter-F37626?style=flat)](https://jupyter.org)
 [![Microsoft Office](https://img.shields.io/badge/Microsoft%20Office-D83B01?style=flat)](https://microsoft.com/office)
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat)](https://aws.amazon.com)
+[![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat)](https://azure.microsoft.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat)](https://docker.com)
+
 
 
 ## Projects
