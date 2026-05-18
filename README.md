@@ -1,71 +1,184 @@
-# Hey, I'm Prem Ganesh Maddirala!
+# Prem Ganesh Maddirala
 
-## About Me
-I’m a driven graduate student pursuing a **Master of Science in Data Science and Analytics** with a specialization in Computing & Decision Analytics at Arizona State University (Expected June 2026), following a **Bachelor of Engineering in Computer Science** from Birla Institute of Technology & Sciences, Dubai (June 2022). With a robust background in data analytics, machine learning, automation, and digital transformation, I transform complex challenges into innovative, user-centric solutions.
+**Software Engineer** · Building production systems with ML/AI at scale
 
-I’m passionate about exploring the frontiers of **large language models (LLMs)**, **transformers**, and advanced AI techniques, alongside my expertise in graph analytics, computer vision, and real-time data pipelines. Let’s collaborate to build groundbreaking data-driven systems!
+MS Data Science & Analytics @ Arizona State University · BE Computer Science @ BITS Dubai
 
-- **LinkedIn**: [linkedin.com/in/premtheganesh](https://linkedin.com/in/premtheganesh)
-- **GitHub**: [github.com/premtheganesh](https://github.com/premtheganesh)
-- **Email**: premtheg@asu.edu
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/premtheganesh)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/premtheganesh)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:premganeshmaddirala@gmail.com)
+
+---
+
+## What I Build
+
+I design and ship **production-grade software systems** — from real-time streaming pipelines processing millions of records to LLM-powered automation platforms serving enterprise clients daily. My work sits at the intersection of **backend engineering**, **distributed systems**, and **applied AI/ML**.
+
+**Currently:** Software Engineer – AI/ML Intern @ Leaniar LLC, architecting scalable SAP automation with Django, Redis, and RAG-based routing (95% reduction in processing time, 99%+ reliability).
+
+---
 
 ## Tech Stack
 
-### Programming Languages
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat)](https://python.org)
-[![Java](https://img.shields.io/badge/Java-007396?style=flat)](https://java.com)
-[![C](https://img.shields.io/badge/C-00599C?style=flat)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![R](https://img.shields.io/badge/R-276DC3?style=flat)](https://r-project.org)
-[![SQL](https://img.shields.io/badge/SQL-003B57?style=flat)](https://en.wikipedia.org/wiki/SQL)
-[![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat)](https://mathworks.com/products/matlab.html)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+**Languages**
 
-### Machine Learning & AI Libraries
-[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat)](https://scikit-learn.org)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat)](https://tensorflow.org)
-[![Keras](https://img.shields.io/badge/Keras-D00000?style=flat)](https://keras.io)
-[![XGBoost](https://img.shields.io/badge/XGBoost-00BFFF?style=flat)](https://xgboost.ai)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat)](https://pytorch.org)
-[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat)](https://opencv.org)
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat)](https://huggingface.co)
-[![LightGBM](https://img.shields.io/badge/LightGBM-2E8B57?style=flat)](https://lightgbm.readthedocs.io)
-[![NLTK](https://img.shields.io/badge/NLTK-4B0082?style=flat)](https://nltk.org)
-[![Haar Cascade](https://img.shields.io/badge/Haar%20Cascade-808080?style=flat)](https://docs.opencv.org/master/d2/d99/tutorial_js_face_detection.html)
-[![Dlib](https://img.shields.io/badge/Dlib-228B22?style=flat)](https://dlib.net)
-[![CNN](https://img.shields.io/badge/CNN-FF4500?style=flat)](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)](https://java.com)
+[![SQL](https://img.shields.io/badge/SQL-003B57?style=flat&logo=postgresql&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
+[![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)](https://isocpp.org)
+[![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)](https://r-project.org)
 
-### Data Analysis & Visualization
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat)](https://pandas.pydata.org)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat)](https://numpy.org)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat)](https://matplotlib.org)
-[![Seaborn](https://img.shields.io/badge/Seaborn-4C1D95?style=flat)](https://seaborn.pydata.org)
-[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat)](https://powerbi.microsoft.com)
-[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat)](https://tableau.com)
-[![Excel](https://img.shields.io/badge/Excel-217346?style=flat)](https://microsoft.com/excel)
-[![Google Analytics](https://img.shields.io/badge/Google%20Analytics-E37400?style=flat)](https://analytics.google.com)
+**Backend & APIs**
 
-### Core Technical Stack
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat)](https://postgresql.org)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat)](https://mysql.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat)](https://github.com)
-[![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat)](https://code.visualstudio.com)
-[![Jupyter Notebooks](https://img.shields.io/badge/Jupyter-F37626?style=flat)](https://jupyter.org)
-[![Microsoft Office](https://img.shields.io/badge/Microsoft%20Office-D83B01?style=flat)](https://microsoft.com/office)
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat)](https://aws.amazon.com)
-[![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat)](https://azure.microsoft.com)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat)](https://docker.com)
-[![Groq](https://img.shields.io/badge/Groq-00A1D6?style=flat)](https://groq.com) 
-[![Hugging Face Datasets](https://img.shields.io/badge/Datasets-FFD21E?style=flat)](https://huggingface.co/docs/datasets) 
-[![NLTK](https://img.shields.io/badge/NLTK-4B0082?style=flat)](https://nltk.org) 
+[![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)](https://djangoproject.com)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![REST APIs](https://img.shields.io/badge/REST_APIs-FF6C37?style=flat&logo=postman&logoColor=white)](https://restfulapi.net)
 
+**Databases & Storage**
 
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)](https://postgresql.org)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://mysql.com)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)](https://mongodb.com)
+[![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white)](https://neo4j.com)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)](https://redis.io)
+[![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat)](https://github.com/facebookresearch/faiss)
 
-## Projects
-Explore my key projects on GitHub:
-- **[Sentiment Analyzer for Twitter Data](https://github.com/premtheganesh/Twitter-Sentiment-Analysis)**: Developed a transformer-based sentiment analysis pipeline with 93% accuracy.
-- **[Driver Drowsiness Detection](https://github.com/premtheganesh/drowsinessdetection)**: Led a team to build a 95%-accurate real-time drowsiness detection system using CNN and OpenCV.
-- **[Image Captioning with Fine-Tuning](https://github.com/premtheganesh/Image_Captioning)**: Fine-tuned Llama-4 vision models and custom MobileNetV3 for Flickr8k.
-- **[Retail Customer Segmentation](https://github.com/premtheganesh/Online_Retail_Customer_Segmentation)**: Implemented RFM analysis and clustering (K-Means, Hierarchical, DBSCAN).
+**Cloud & DevOps**
 
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)](https://aws.amazon.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)](https://kafka.apache.org)
 
-Thanks for visiting my profile! I’m excited to collaborate on projects involving LLMs, transformers, and beyond. Feel free to reach out! 
+**ML & AI**
+
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)](https://tensorflow.org)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)](https://langchain.com)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://opencv.org)
+
+**Frontend & Visualization**
+
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev)
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
+[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)](https://tableau.com)
+
+---
+
+## Featured Projects
+
+### [Graph Data Processing Pipeline](https://github.com/premtheganesh/Graph_Processing_Pipeline)
+**Distributed Systems** · Python, Kafka, Kubernetes, Neo4j, Docker
+
+Real-time streaming pipeline processing **millions of NYC taxi trip records**. Two-phase architecture: batch loading into Neo4j graph + Kafka-powered real-time streaming with Kubernetes orchestration. Implements PageRank and BFS graph algorithms via Cypher queries.
+
+`Kafka` `Kubernetes` `Neo4j` `Docker` `Helm` `Distributed Systems` `Graph Algorithms`
+
+---
+
+### [EtherFi Portfolio Manager](https://github.com/premtheganesh/etherfi-portfolio-manager) — *ASU Claude Hackathon Winner*
+**AI-Powered DeFi Platform** · JavaScript (React), Python (FastAPI), SQLite
+
+AI-powered DeFi portfolio advisor integrating Claude API with ether.fi protocols. Multi-broker voting system where global freelance brokers validate AI-generated portfolio recommendations. Privacy-first architecture with self-improving AI feedback loops.
+
+`React` `FastAPI` `Claude API` `SQLite` `DeFi` `System Design`
+
+---
+
+### [TrendScout AI](https://github.com/premtheganesh/TrendScout-AI)
+**Market Intelligence Platform** · Python, FastAPI, Neo4j, FAISS, MongoDB
+
+Conversational startup discovery engine with hybrid search (BM25 + FAISS semantic search + Reciprocal Rank Fusion). Knowledge graph with 461 nodes and 344 relationships in Neo4j. 7-endpoint REST API serving 210 indexed documents across 140 startups. Built for ASU CSE 573: Semantic Web Mining.
+
+`FastAPI` `Neo4j` `FAISS` `MongoDB` `Playwright` `spaCy` `Groq API` `REST API`
+
+---
+
+### [Aircraft Predictive Maintenance System](https://github.com/premtheganesh) *(In Progress)*
+**ML Engineering** · Python, Flask, React, LSTM, Transformers
+
+Predictive maintenance system forecasting Remaining Useful Life (RUL) of aircraft components using NASA C-MAPSS and NGAFID datasets. LSTM and Transformer models with multi-source data fusion. Deployed via Flask API + React dashboard for real-time monitoring.
+
+`Flask` `React` `LSTM` `Transformers` `Time-Series` `Feature Engineering`
+
+---
+
+### [Sentiment Analyzer](https://github.com/premtheganesh/Sentiment_Analysis_of_Twitter_Data)
+**NLP Pipeline** · Python, BERT, Scikit-learn, Gradio
+
+End-to-end NLP pipeline processing **1.6M tweets**. Systematic comparison of 6 embedding methods (BoW → TF-IDF → Word2Vec → FastText → GloVe → BERT) across 5 ML models. Fine-tuned BERT achieved **92.7% accuracy** — 13-15% improvement over classical baselines. Live Gradio demo.
+
+`BERT` `Scikit-learn` `HuggingFace` `Gradio` `NLP` `Large-Scale Data`
+
+---
+
+### [Driver Drowsiness Detection](https://github.com/premtheganesh/drowsinessdetection)
+**Real-Time Computer Vision** · Python, OpenCV, Keras, dlib
+
+Real-time drowsiness detection via webcam using multi-model pipeline: Haar Cascades for face detection, CNN for eye-state classification, and dlib 68-landmark model for yawn detection. Triggers audio alarm when drowsiness score exceeds threshold.
+
+`OpenCV` `CNN` `dlib` `Real-Time Systems` `Safety-Critical`
+
+---
+
+### [Image Captioning System](https://github.com/premtheganesh/Image_Captioning)
+**Computer Vision + NLP** · Python, PyTorch, TensorFlow, Groq API
+
+Dual-approach image captioning: fine-tuned Llama-4 vision models via Groq API + custom MobileNetV3 encoder with Bidirectional LSTM + Attention-over-Attention decoder. Evaluated with BLEU, METEOR, ROUGE-L, and SPICE metrics. Includes text-to-speech output via gTTS.
+
+`PyTorch` `TensorFlow` `Groq API` `Llama-4` `Attention Mechanisms` `Transfer Learning`
+
+---
+
+### [Customer Segmentation Engine](https://github.com/premtheganesh/Online_Retail_Customer_Segmentation)
+**Data Science** · Python, Scikit-learn
+
+Customer segmentation on 54,000+ e-commerce transactions using RFM analysis. Compared K-Means, Hierarchical Clustering, and DBSCAN. K-Means achieved best Silhouette Score (~0.69) identifying 4 actionable segments: high-value, at-risk, occasional, and new customers.
+
+`Clustering` `RFM Analysis` `Scikit-learn` `Business Analytics`
+
+---
+
+### [DailyFire](https://github.com/premtheganesh/DailyFire)
+**Full-Stack Web Application** · TypeScript, Python, CSS
+
+Modern full-stack application with React-powered frontend and Python backend. Features comprehensive test suite and CI-ready architecture. Built with AI-assisted development workflow.
+
+`TypeScript` `React` `Python` `Testing` `Full-Stack`
+
+---
+
+### [DeadlineIQ](https://github.com/premtheganesh/DeadlineIQ) — [Live Demo](https://deadline-iq.vercel.app)
+**Web Application** · Vanilla JavaScript, HTML5, CSS3
+
+AI-powered assignment management dashboard with custom priority scoring algorithm (urgency + grade weight + workload + grade impact). 5 dashboard views, Pomodoro timer, analytics, and confetti celebrations. Zero dependencies, dark mode, WCAG-compliant. Built in 48 hours for ASU App Challenge.
+
+`JavaScript` `Responsive Design` `Algorithm Design` `Accessibility`
+
+---
+
+## Experience
+
+| Role | Company | Duration |
+|------|---------|----------|
+| **Software Engineer – AI/ML Intern** | Leaniar LLC, California | Sep 2025 – Current |
+| **Product Strategy & Implementation Analyst** | Konica Minolta, Dubai | Feb 2023 – Jul 2024 |
+| **Digital Transformation Intern** | Konica Minolta, Dubai | Aug 2022 – Jan 2023 |
+| **Data Analyst & Automation Intern** | Flydubai, Dubai | Aug 2021 – Jan 2022 |
+
+---
+
+## Let's Connect
+
+I'm graduating in **May 2026** and looking for **Software Engineer, ML Engineer, and Data Scientist** roles. Open to opportunities anywhere in the US.
+
+If you're building something interesting — especially at the intersection of backend systems and AI — let's talk.
+
+📫 **premganeshmaddirala@gmail.com** · [LinkedIn](https://linkedin.com/in/premtheganesh)
