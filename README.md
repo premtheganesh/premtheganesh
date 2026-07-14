@@ -27,15 +27,11 @@ I design and ship **production-grade software systems** — from real-time strea
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)](https://java.com)
 [![SQL](https://img.shields.io/badge/SQL-003B57?style=flat&logo=postgresql&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
-[![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)](https://isocpp.org)
-[![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)](https://r-project.org)
 
 **Backend & APIs**
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)](https://djangoproject.com)
-[![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat&logo=socketdotio&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 [![Celery](https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white)](https://docs.celeryq.dev)
 [![REST APIs](https://img.shields.io/badge/REST_APIs-FF6C37?style=flat&logo=postman&logoColor=white)](https://restfulapi.net)
@@ -76,15 +72,6 @@ I design and ship **production-grade software systems** — from real-time strea
 ---
 
 ## Featured Projects
-
-### [Hustle](https://github.com/premtheganesh/Hustle) ⚡
-**Personal Productivity App** · TypeScript, Python, CSS
-
-A personal productivity app to track your daily routine, manage tasks, and stay consistent every single day. Daily routine tasks per day type (weekday / Saturday / Sunday) with tap-to-complete and drag-to-reorder, one-off tasks with priority levels and due dates, a homepage dashboard with progress ring / streak / XP level, Focus page combining goals + milestones with a Vision Board, 7/14/30-day XP and completion analytics, daily journaling, and weekly summaries.
-
-`TypeScript` `React` `Python` `Full-Stack` `Gamification` `Product Design`
-
----
 
 ### [Real-Time Chat Service](https://github.com/premtheganesh)
 **Backend Engineering** · Python, FastAPI, Redis, PostgreSQL
@@ -173,6 +160,15 @@ Real-time drowsiness detection via webcam using multi-model pipeline: Haar Casca
 Customer segmentation on 54,000+ e-commerce transactions using RFM analysis. Compared K-Means, Hierarchical Clustering, and DBSCAN. K-Means achieved best Silhouette Score (~0.69) identifying 4 actionable segments: high-value, at-risk, occasional, and new customers.
 
 `Clustering` `RFM Analysis` `Scikit-learn` `Business Analytics`
+
+---
+
+### [Hustle](https://github.com/premtheganesh/Hustle) ⚡
+**Personal Productivity App** · TypeScript, Python, CSS
+
+A personal productivity app to track your daily routine, manage tasks, and stay consistent every single day. Daily routine tasks per day type (weekday / Saturday / Sunday) with tap-to-complete and drag-to-reorder, one-off tasks with priority levels and due dates, a homepage dashboard with progress ring / streak / XP level, Focus page combining goals + milestones with a Vision Board, 7/14/30-day XP and completion analytics, daily journaling, and weekly summaries.
+
+`TypeScript` `React` `Python` `Full-Stack` `Gamification` `Product Design`
 
 ---
 
