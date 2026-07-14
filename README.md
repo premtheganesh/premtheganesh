@@ -14,7 +14,7 @@ MS Data Science & Analytics @ Arizona State University · BE Computer Science @ 
 
 I design and ship **production-grade software systems** — from real-time streaming pipelines processing millions of records to LLM-powered automation platforms serving enterprise clients daily. My work sits at the intersection of **backend engineering**, **distributed systems**, and **applied AI/ML**.
 
-**Currently:** Software Engineer – AI/ML Intern @ Leaniar LLC, architecting scalable SAP automation with Django, Redis, and RAG-based routing (95% reduction in processing time, 99%+ reliability).
+**Currently:** Software Engineer – AI/ML Intern @ Leaniar LLC, building LLM-powered SAP automation — conversational AI agents on UiPath Autopilot + Microsoft Teams, auto-discovery across 1,500+ OData services, and production pipelines processing 1,800+ row datasets daily at 99%+ reliability.
 
 ---
 
@@ -32,10 +32,12 @@ I design and ship **production-grade software systems** — from real-time strea
 
 **Backend & APIs**
 
-[![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)](https://djangoproject.com)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)](https://djangoproject.com)
 [![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat&logo=socketdotio&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+[![Celery](https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white)](https://docs.celeryq.dev)
 [![REST APIs](https://img.shields.io/badge/REST_APIs-FF6C37?style=flat&logo=postman&logoColor=white)](https://restfulapi.net)
 
 **Databases & Storage**
@@ -62,6 +64,7 @@ I design and ship **production-grade software systems** — from real-time strea
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co)
 [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)](https://langchain.com)
+[![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)](https://anthropic.com)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://opencv.org)
 
 **Frontend & Visualization**
@@ -74,6 +77,33 @@ I design and ship **production-grade software systems** — from real-time strea
 
 ## Featured Projects
 
+### [Hustle](https://github.com/premtheganesh/Hustle) ⚡
+**Personal Productivity App** · TypeScript, Python, CSS
+
+A personal productivity app to track your daily routine, manage tasks, and stay consistent every single day. Daily routine tasks per day type (weekday / Saturday / Sunday) with tap-to-complete and drag-to-reorder, one-off tasks with priority levels and due dates, a homepage dashboard with progress ring / streak / XP level, Focus page combining goals + milestones with a Vision Board, 7/14/30-day XP and completion analytics, daily journaling, and weekly summaries.
+
+`TypeScript` `React` `Python` `Full-Stack` `Gamification` `Product Design`
+
+---
+
+### [Real-Time Chat Service](https://github.com/premtheganesh)
+**Backend Engineering** · Python, FastAPI, Redis, PostgreSQL
+
+Real-time messaging platform supporting 1-on-1 and group conversations using FastAPI WebSocket and Redis pub/sub for cross-instance message broadcasting. JWT authentication, PostgreSQL-backed message persistence with cursor-based pagination, online presence tracking, and read receipt delivery guarantees.
+
+`FastAPI` `WebSockets` `Redis Pub/Sub` `PostgreSQL` `JWT` `Distributed Systems`
+
+---
+
+### [Bulk Notification Service](https://github.com/premtheganesh)
+**Async Systems** · Python, FastAPI, Celery, Redis, Docker
+
+Asynchronous notification delivery platform using FastAPI and Celery with Redis as message broker. Jinja2-based email templating, per-recipient delivery tracking, exponential backoff retry logic, and configurable rate limiting. Deployed with Docker Compose and GitHub Actions CI/CD.
+
+`FastAPI` `Celery` `Redis` `Docker Compose` `CI/CD` `Rate Limiting`
+
+---
+
 ### [Graph Data Processing Pipeline](https://github.com/premtheganesh/Graph_Processing_Pipeline)
 **Distributed Systems** · Python, Kafka, Kubernetes, Neo4j, Docker
 
@@ -83,10 +113,10 @@ Real-time streaming pipeline processing **millions of NYC taxi trip records**. T
 
 ---
 
-### [EtherFi Portfolio Manager](https://github.com/premtheganesh/etherfi-portfolio-manager) — *ASU Claude Hackathon Winner*
+### [EtherFi Portfolio Manager](https://github.com/premtheganesh/etherfi-portfolio-manager) — *ASU Claude Hackathon Winner 🏆*
 **AI-Powered DeFi Platform** · JavaScript (React), Python (FastAPI), SQLite
 
-AI-powered DeFi portfolio advisor integrating Claude API with ether.fi protocols. Multi-broker voting system where global freelance brokers validate AI-generated portfolio recommendations. Privacy-first architecture with self-improving AI feedback loops.
+AI-powered DeFi portfolio advisor rapid-prototyped in 48 hours. Integrates Claude API with ether.fi protocols and a multi-broker voting system where global freelance brokers validate AI-generated portfolio recommendations. Privacy-first architecture with self-improving AI feedback loops.
 
 `React` `FastAPI` `Claude API` `SQLite` `DeFi` `System Design`
 
@@ -97,7 +127,7 @@ AI-powered DeFi portfolio advisor integrating Claude API with ether.fi protocols
 
 Conversational startup discovery engine with hybrid search (BM25 + FAISS semantic search + Reciprocal Rank Fusion). Knowledge graph with 461 nodes and 344 relationships in Neo4j. 7-endpoint REST API serving 210 indexed documents across 140 startups. Built for ASU CSE 573: Semantic Web Mining.
 
-`FastAPI` `Neo4j` `FAISS` `MongoDB` `Playwright` `spaCy` `Groq API` `REST API`
+`FastAPI` `Neo4j` `FAISS` `MongoDB` `Playwright` `spaCy` `Groq API` `RAG`
 
 ---
 
@@ -119,15 +149,6 @@ End-to-end NLP pipeline processing **1.6M tweets**. Systematic comparison of 6 e
 
 ---
 
-### [Driver Drowsiness Detection](https://github.com/premtheganesh/drowsinessdetection)
-**Real-Time Computer Vision** · Python, OpenCV, Keras, dlib
-
-Real-time drowsiness detection via webcam using multi-model pipeline: Haar Cascades for face detection, CNN for eye-state classification, and dlib 68-landmark model for yawn detection. Triggers audio alarm when drowsiness score exceeds threshold.
-
-`OpenCV` `CNN` `dlib` `Real-Time Systems` `Safety-Critical`
-
----
-
 ### [Image Captioning System](https://github.com/premtheganesh/Image_Captioning)
 **Computer Vision + NLP** · Python, PyTorch, TensorFlow, Groq API
 
@@ -137,21 +158,21 @@ Dual-approach image captioning: fine-tuned Llama-4 vision models via Groq API + 
 
 ---
 
+### [Driver Drowsiness Detection](https://github.com/premtheganesh/drowsinessdetection)
+**Real-Time Computer Vision** · Python, OpenCV, Keras, dlib
+
+Real-time drowsiness detection via webcam using multi-model pipeline: Haar Cascades for face detection, CNN for eye-state classification, and dlib 68-landmark model for yawn detection. Triggers audio alarm when drowsiness score exceeds threshold.
+
+`OpenCV` `CNN` `dlib` `Real-Time Systems` `Safety-Critical`
+
+---
+
 ### [Customer Segmentation Engine](https://github.com/premtheganesh/Online_Retail_Customer_Segmentation)
 **Data Science** · Python, Scikit-learn
 
 Customer segmentation on 54,000+ e-commerce transactions using RFM analysis. Compared K-Means, Hierarchical Clustering, and DBSCAN. K-Means achieved best Silhouette Score (~0.69) identifying 4 actionable segments: high-value, at-risk, occasional, and new customers.
 
 `Clustering` `RFM Analysis` `Scikit-learn` `Business Analytics`
-
----
-
-### [DailyFire](https://github.com/premtheganesh/DailyFire)
-**Full-Stack Web Application** · TypeScript, Python, CSS
-
-Modern full-stack application with React-powered frontend and Python backend. Features comprehensive test suite and CI-ready architecture. Built with AI-assisted development workflow.
-
-`TypeScript` `React` `Python` `Testing` `Full-Stack`
 
 ---
 
@@ -177,7 +198,7 @@ AI-powered assignment management dashboard with custom priority scoring algorith
 
 ## Let's Connect
 
-I'm graduating in **May 2026** and looking for **Software Engineer, ML Engineer, and Data Scientist** roles. Open to opportunities anywhere in the US.
+I graduated in **May 2026** and I'm looking for **Software Engineer, ML Engineer, Forward Deployed Engineer, and Data Scientist** roles. Open to opportunities anywhere in the US.
 
 If you're building something interesting — especially at the intersection of backend systems and AI — let's talk.
 
