@@ -12,9 +12,15 @@ MS Data Science & Analytics @ Arizona State University · BE Computer Science @ 
 
 ## What I Build
 
-I design and ship **production-grade software systems** — from real-time streaming pipelines processing millions of records to LLM-powered automation platforms serving enterprise clients daily. My work sits at the intersection of **backend engineering**, **distributed systems**, and **applied AI/ML**.
+I design and ship **production-grade software systems**, from real-time streaming pipelines processing millions of records to LLM-powered automation platforms serving enterprise clients daily. My work sits at the intersection of **backend engineering**, **distributed systems**, and **applied AI/ML**.
 
-**Currently:** Software Engineer – AI/ML Intern @ Leaniar LLC, building LLM-powered SAP automation — conversational AI agents on UiPath Autopilot + Microsoft Teams, auto-discovery across 1,500+ OData services, and production pipelines processing 1,800+ row datasets daily at 99%+ reliability.
+**Currently:** Software Engineer – AI/ML Intern @ Leaniar LLC, building an AI agent-based test-automation platform for enterprise SAP, JD Edwards and Salesforce systems, which cut manual QA effort ~80% and took 2-week QA cycles under 3 days.
+
+- **Self-healing test automation** that turns analysts' plain-English Word test scripts into executable Playwright automation against a GxP-regulated Salesforce pharmacovigilance application, proving each step actually worked
+- **A verb store** of parameterized code templates that assembles known steps deterministically, with no browser and no AI in the loop, removing per-document code duplication and the configuration drift it caused
+- **An autonomous auto-fix loop** where a database poller detects unresolvable steps and launches a headless multi-subagent session that attaches to a persistent signed-in browser over the Chrome DevTools Protocol, probes the live DOM, and synthesizes stable selectors
+- **Evidence-first validation**: every synthesized selector is checked statically, then live against a real record, before it is spliced back in. Zero false passes across ~15 step and document types, with evidence produced for human GxP sign-off
+- **The supporting stack**: an LLM-powered SAP OData engine that auto-discovers the right API from 1,500+ services (1-2 days down to 15-20 minutes), an LLM plus pandas hybrid running model-written code in a sandbox at ~$0.001/query, Django REST APIs with RabbitMQ orchestration (~40% more throughput, ~65% less latency), and a locally hosted LLM council that cut inference cost ~40%
 
 ---
 
@@ -34,6 +40,7 @@ I design and ship **production-grade software systems** — from real-time strea
 [![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)](https://djangoproject.com)
 [![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat&logo=socketdotio&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 [![Celery](https://img.shields.io/badge/Celery-37814A?style=flat&logo=celery&logoColor=white)](https://docs.celeryq.dev)
+[![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white)](https://rabbitmq.com)
 [![REST APIs](https://img.shields.io/badge/REST_APIs-FF6C37?style=flat&logo=postman&logoColor=white)](https://restfulapi.net)
 
 **Databases & Storage**
@@ -48,6 +55,7 @@ I design and ship **production-grade software systems** — from real-time strea
 **Cloud & DevOps**
 
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)](https://aws.amazon.com)
+[![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)](https://github.com/features/actions)
@@ -60,7 +68,9 @@ I design and ship **production-grade software systems** — from real-time strea
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co)
 [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)](https://langchain.com)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)](https://langchain-ai.github.io/langgraph/)
 [![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)](https://anthropic.com)
+[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)](https://playwright.dev)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://opencv.org)
 
 **Frontend & Visualization**
@@ -73,7 +83,16 @@ I design and ship **production-grade software systems** — from real-time strea
 
 ## Featured Projects
 
-### [Real-Time Chat Service](https://github.com/premtheganesh)
+### [TrendScout AI](https://github.com/premtheganesh/TrendScout-AI)
+**Market Intelligence Platform** · Python, FastAPI, MongoDB, Neo4j, FAISS
+
+Conversational market-intelligence engine over **1,580 documents spanning 1,370 YC AI companies**, funding news and open-source activity, scraped into MongoDB with spaCy NER entity extraction. Every document is indexed three ways: Okapi BM25 for exact terms, E5-base-v2 embeddings in a FAISS index for meaning, and a shared-entity Neo4j graph for connections. The rankings are fused with Reciprocal Rank Fusion and measured at **0.881 nDCG@10** across 22 labelled queries with 65 graded judgements. A Groq-hosted LLM answers using only the retrieved documents, citing every claim.
+
+`FastAPI` `MongoDB` `Neo4j` `FAISS` `BM25` `Reciprocal Rank Fusion` `spaCy` `Groq API` `RAG`
+
+---
+
+### Real-Time Chat Service
 **Backend Engineering** · Python, FastAPI, Redis, PostgreSQL
 
 Real-time messaging platform supporting 1-on-1 and group conversations using FastAPI WebSocket and Redis pub/sub for cross-instance message broadcasting. JWT authentication, PostgreSQL-backed message persistence with cursor-based pagination, online presence tracking, and read receipt delivery guarantees.
@@ -82,7 +101,7 @@ Real-time messaging platform supporting 1-on-1 and group conversations using Fas
 
 ---
 
-### [Bulk Notification Service](https://github.com/premtheganesh)
+### Bulk Notification Service
 **Async Systems** · Python, FastAPI, Celery, Redis, Docker
 
 Asynchronous notification delivery platform using FastAPI and Celery with Redis as message broker. Jinja2-based email templating, per-recipient delivery tracking, exponential backoff retry logic, and configurable rate limiting. Deployed with Docker Compose and GitHub Actions CI/CD.
@@ -100,7 +119,7 @@ Real-time streaming pipeline processing **millions of NYC taxi trip records**. T
 
 ---
 
-### [EtherFi Portfolio Manager](https://github.com/premtheganesh/etherfi-portfolio-manager) — *ASU Claude Hackathon Winner 🏆*
+### [EtherFi Portfolio Manager](https://github.com/premtheganesh/etherfi-portfolio-manager) · *ASU Claude Hackathon Winner 🏆*
 **AI-Powered DeFi Platform** · JavaScript (React), Python (FastAPI), SQLite
 
 AI-powered DeFi portfolio advisor rapid-prototyped in 48 hours. Integrates Claude API with ether.fi protocols and a multi-broker voting system where global freelance brokers validate AI-generated portfolio recommendations. Privacy-first architecture with self-improving AI feedback loops.
@@ -109,16 +128,7 @@ AI-powered DeFi portfolio advisor rapid-prototyped in 48 hours. Integrates Claud
 
 ---
 
-### [TrendScout AI](https://github.com/premtheganesh/TrendScout-AI)
-**Market Intelligence Platform** · Python, FastAPI, Neo4j, FAISS, MongoDB
-
-Conversational startup discovery engine with hybrid search (BM25 + FAISS semantic search + Reciprocal Rank Fusion). Knowledge graph with 461 nodes and 344 relationships in Neo4j. 7-endpoint REST API serving 210 indexed documents across 140 startups. Built for ASU CSE 573: Semantic Web Mining.
-
-`FastAPI` `Neo4j` `FAISS` `MongoDB` `Playwright` `spaCy` `Groq API` `RAG`
-
----
-
-### [Aircraft Predictive Maintenance System](https://github.com/premtheganesh) *(In Progress)*
+### [Aircraft Predictive Maintenance System](https://github.com/premtheganesh/IFRPM) *(In Progress)*
 **ML Engineering** · Python, Flask, React, LSTM, Transformers
 
 Predictive maintenance system forecasting Remaining Useful Life (RUL) of aircraft components using NASA C-MAPSS and NGAFID datasets. LSTM and Transformer models with multi-source data fusion. Deployed via Flask API + React dashboard for real-time monitoring.
@@ -130,7 +140,7 @@ Predictive maintenance system forecasting Remaining Useful Life (RUL) of aircraf
 ### [Sentiment Analyzer](https://github.com/premtheganesh/Sentiment_Analysis_of_Twitter_Data)
 **NLP Pipeline** · Python, BERT, Scikit-learn, Gradio
 
-End-to-end NLP pipeline processing **1.6M tweets**. Systematic comparison of 6 embedding methods (BoW → TF-IDF → Word2Vec → FastText → GloVe → BERT) across 5 ML models. Fine-tuned BERT achieved **92.7% accuracy** — 13-15% improvement over classical baselines. Live Gradio demo.
+End-to-end NLP pipeline processing **1.6M tweets**. Systematic comparison of 6 embedding methods (BoW, TF-IDF, Word2Vec, FastText, GloVe, BERT) across 5 ML models. Fine-tuned BERT achieved **92.7% accuracy**, a 13-15% improvement over classical baselines. Live Gradio demo.
 
 `BERT` `Scikit-learn` `HuggingFace` `Gradio` `NLP` `Large-Scale Data`
 
@@ -163,7 +173,7 @@ Customer segmentation on 54,000+ e-commerce transactions using RFM analysis. Com
 
 ---
 
-### [Hustle](https://github.com/premtheganesh/Hustle) ⚡
+### [Hustle](https://github.com/premtheganesh/Hustle---Daily-Productivity-App) ⚡
 **Personal Productivity App** · TypeScript, Python, CSS
 
 A personal productivity app to track your daily routine, manage tasks, and stay consistent every single day. Daily routine tasks per day type (weekday / Saturday / Sunday) with tap-to-complete and drag-to-reorder, one-off tasks with priority levels and due dates, a homepage dashboard with progress ring / streak / XP level, Focus page combining goals + milestones with a Vision Board, 7/14/30-day XP and completion analytics, daily journaling, and weekly summaries.
@@ -172,7 +182,7 @@ A personal productivity app to track your daily routine, manage tasks, and stay 
 
 ---
 
-### [DeadlineIQ](https://github.com/premtheganesh/DeadlineIQ) — [Live Demo](https://deadline-iq.vercel.app)
+### [DeadlineIQ](https://github.com/premtheganesh/DeadlineIQ) · [Live Demo](https://deadline-iq.vercel.app)
 **Web Application** · Vanilla JavaScript, HTML5, CSS3
 
 AI-powered assignment management dashboard with custom priority scoring algorithm (urgency + grade weight + workload + grade impact). 5 dashboard views, Pomodoro timer, analytics, and confetti celebrations. Zero dependencies, dark mode, WCAG-compliant. Built in 48 hours for ASU App Challenge.
@@ -186,7 +196,7 @@ AI-powered assignment management dashboard with custom priority scoring algorith
 | Role | Company | Duration |
 |------|---------|----------|
 | **Software Engineer – AI/ML Intern** | Leaniar LLC, California | Sep 2025 – Current |
-| **Product Strategy & Implementation Analyst** | Konica Minolta, Dubai | Feb 2023 – Jul 2024 |
+| **Automation Engineer** | Konica Minolta, Dubai | Feb 2023 – Jul 2024 |
 | **Digital Transformation Intern** | Konica Minolta, Dubai | Aug 2022 – Jan 2023 |
 | **Data Analyst & Automation Intern** | Flydubai, Dubai | Aug 2021 – Jan 2022 |
 
@@ -196,6 +206,6 @@ AI-powered assignment management dashboard with custom priority scoring algorith
 
 I graduated in **May 2026** and I'm looking for **Software Engineer, ML Engineer, Forward Deployed Engineer, and Data Scientist** roles. Open to opportunities anywhere in the US.
 
-If you're building something interesting — especially at the intersection of backend systems and AI — let's talk.
+If you're building something interesting, especially at the intersection of backend systems and AI, let's talk.
 
 📫 **premganeshmaddirala@gmail.com** · [LinkedIn](https://linkedin.com/in/premtheganesh)
