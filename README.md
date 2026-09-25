@@ -1,6 +1,6 @@
 # Prem Ganesh Maddirala
 
-**Software Engineer** · Building production systems with ML/AI at scale
+**Software Engineer** · Building production systems with AI at scale
 
 MS Data Science & Analytics @ Arizona State University · BE Computer Science @ BITS Dubai
 
@@ -12,9 +12,9 @@ MS Data Science & Analytics @ Arizona State University · BE Computer Science @ 
 
 ## What I Build
 
-I design and ship **production-grade software systems**, from real-time streaming pipelines processing millions of records to LLM-powered automation platforms serving enterprise clients daily. My work sits at the intersection of **backend engineering**, **distributed systems**, and **applied AI/ML**.
+I design and ship **production-grade software systems**, from real-time streaming pipelines processing millions of records to LLM-powered automation platforms serving enterprise clients daily. My work sits at the intersection of **backend engineering**, **distributed systems**, and **applied AI**.
 
-**Currently:** Software Engineer – AI/ML Intern @ Leaniar LLC, building an AI agent-based test-automation platform for enterprise SAP, JD Edwards and Salesforce systems, which cut manual QA effort ~80% and took 2-week QA cycles under 3 days.
+**Currently:** Software Engineer – AI @ Leaniar LLC, building an AI agent-based test-automation platform for enterprise SAP, JD Edwards and Salesforce systems, which cut manual QA effort ~80% and took 2-week QA cycles under 3 days.
 
 - **Self-healing test automation** that turns analysts' plain-English Word test scripts into executable Playwright automation against a GxP-regulated Salesforce pharmacovigilance application, proving each step actually worked
 - **A verb store** of parameterized code templates that assembles known steps deterministically, with no browser and no AI in the loop, removing per-document code duplication and the configuration drift it caused
@@ -55,6 +55,8 @@ I design and ship **production-grade software systems**, from real-time streamin
 **Cloud & DevOps**
 
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)](https://aws.amazon.com)
+[![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat&logo=awslambda&logoColor=white)](https://aws.amazon.com/lambda/)
+[![Amazon SQS](https://img.shields.io/badge/Amazon_SQS-FF4F8B?style=flat&logo=amazonsqs&logoColor=white)](https://aws.amazon.com/sqs/)
 [![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io)
@@ -76,6 +78,7 @@ I design and ship **production-grade software systems**, from real-time streamin
 **Frontend & Visualization**
 
 [![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
 [![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)](https://tableau.com)
 
@@ -84,11 +87,26 @@ I design and ship **production-grade software systems**, from real-time streamin
 ## Featured Projects
 
 ### [TrendScout AI](https://github.com/premtheganesh/TrendScout-AI)
-**Market Intelligence Platform** · Python, FastAPI, MongoDB, Neo4j, FAISS
+**Market Intelligence Platform** · Python, FastAPI, Next.js, MongoDB, Neo4j, FAISS
 
-Conversational market-intelligence engine over **1,580 documents spanning 1,370 YC AI companies**, funding news and open-source activity, scraped into MongoDB with spaCy NER entity extraction. Every document is indexed three ways: Okapi BM25 for exact terms, E5-base-v2 embeddings in a FAISS index for meaning, and a shared-entity Neo4j graph for connections. The rankings are fused with Reciprocal Rank Fusion and measured at **0.881 nDCG@10** across 22 labelled queries with 65 graded judgements. A Groq-hosted LLM answers using only the retrieved documents, citing every claim.
+Conversational market-intelligence engine over **3,898 documents across 6 types**, ingested from **11 scheduled sources** and growing ~450 a week, scraped into MongoDB with spaCy NER entity extraction. Every document is indexed three ways: Okapi BM25 for exact terms, E5-base-v2 embeddings in a FAISS index for meaning, and a **10,851-entity Neo4j graph** (20,617 document-entity edges) for connections. The rankings are fused with Reciprocal Rank Fusion and measured at **0.882 nDCG@10** on a frozen snapshot with 22 labelled queries, reproducible from a fresh clone. A structured extraction layer pulls **136 funding rounds worth $24.4B at precision 1.00 and recall 0.93** on 41 hand-labelled articles. A Groq-hosted LLM only plans the query and writes the prose, citing every claim; ranking questions bypass similarity search entirely and rank the extracted rounds in the database. **~11,200 lines of Python behind ~20 FastAPI endpoints, a 2,600-line Next.js 16 site, and 327 tests across 27 files.**
 
-`FastAPI` `MongoDB` `Neo4j` `FAISS` `BM25` `Reciprocal Rank Fusion` `spaCy` `Groq API` `RAG`
+`FastAPI` `Next.js` `MongoDB` `Neo4j` `FAISS` `BM25` `Reciprocal Rank Fusion` `spaCy` `Groq API` `RAG`
+
+---
+
+### Elastic Cloud Face Recognition Pipeline
+**Cloud Architecture: IaaS → Serverless → Edge** · AWS, Python, PyTorch, Docker
+
+A face-recognition service built four times over on AWS, taken from raw infrastructure to serverless to the edge. *(CSE 546 Cloud Computing, ASU)*
+
+**IaaS.** A concurrent Python web tier on a single **EC2** instance behind an Elastic IP, accepting multipart uploads, persisting inputs to **S3**, and resolving predictions from a **SimpleDB** domain. Extended into a multi-tier application with **SQS** request and response queues decoupling the web tier from a **PyTorch** app tier launched from a custom **AMI** — plus a **hand-written autoscaling controller** (AWS Auto Scaling was explicitly disallowed) that scaled app-tier instances **from 0 up to 15 on queue depth** and back to 0 when the workload drained.
+
+**PaaS.** The same pipeline rebuilt serverless as two containerised **AWS Lambda** functions published to **Elastic Container Registry** — MTCNN face detection behind a Lambda Function URL, InceptionResnetV1 recognition triggered by SQS.
+
+**Edge.** Face detection moved off Lambda onto an **AWS IoT Greengrass** component running on a core device, receiving video frames over **MQTT** from an emulated IoT client, with IoT Thing certificates, policies and cloud discovery. Recognition stayed on Lambda in the cloud.
+
+`AWS` `EC2` `S3` `SQS` `Lambda` `ECR` `IoT Greengrass` `MQTT` `Autoscaling` `boto3` `Docker` `PyTorch`
 
 ---
 
@@ -195,7 +213,7 @@ AI-powered assignment management dashboard with custom priority scoring algorith
 
 | Role | Company | Duration |
 |------|---------|----------|
-| **Software Engineer – AI/ML Intern** | Leaniar LLC, California | Sep 2025 – Current |
+| **Software Engineer – AI** | Leaniar LLC, California | Sep 2025 – Current |
 | **Automation Engineer** | Konica Minolta, Dubai | Feb 2023 – Jul 2024 |
 | **Digital Transformation Intern** | Konica Minolta, Dubai | Aug 2022 – Jan 2023 |
 | **Data Analyst & Automation Intern** | Flydubai, Dubai | Aug 2021 – Jan 2022 |
@@ -204,7 +222,7 @@ AI-powered assignment management dashboard with custom priority scoring algorith
 
 ## Let's Connect
 
-I graduated in **May 2026** and I'm looking for **Software Engineer, ML Engineer, Forward Deployed Engineer, and Data Scientist** roles. Open to opportunities anywhere in the US.
+I graduated in **May 2026** and I'm looking for **Software Engineer, AI Engineer, Forward Deployed Engineer, and Data Scientist** roles. Open to opportunities anywhere in the US.
 
 If you're building something interesting, especially at the intersection of backend systems and AI, let's talk.
 
