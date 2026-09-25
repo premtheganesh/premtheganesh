@@ -146,7 +146,7 @@ AI-powered DeFi portfolio advisor rapid-prototyped in 48 hours. Integrates Claud
 
 ---
 
-### [Aircraft Predictive Maintenance System](https://github.com/premtheganesh/IFRPM) *(In Progress)*
+### [Aircraft Predictive Maintenance System](https://github.com/premtheganesh/IFRPM) 
 **ML Engineering** · Python, Flask, React, LSTM, Transformers
 
 Predictive maintenance system forecasting Remaining Useful Life (RUL) of aircraft components using NASA C-MAPSS and NGAFID datasets. LSTM and Transformer models with multi-source data fusion. Deployed via Flask API + React dashboard for real-time monitoring.
