@@ -51,6 +51,7 @@ I design and ship **production-grade software systems**, from real-time streamin
 [![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white)](https://neo4j.com)
 [![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)](https://redis.io)
 [![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat)](https://github.com/facebookresearch/faiss)
+[![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat&logo=postgresql&logoColor=white)](https://github.com/pgvector/pgvector)
 
 **Cloud & DevOps**
 
@@ -72,6 +73,8 @@ I design and ship **production-grade software systems**, from real-time streamin
 [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)](https://langchain.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)](https://langchain-ai.github.io/langgraph/)
 [![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)](https://anthropic.com)
+[![Cohere](https://img.shields.io/badge/Cohere-39594C?style=flat&logo=cohere&logoColor=white)](https://cohere.com)
+[![Langfuse](https://img.shields.io/badge/Langfuse-0A0A0A?style=flat)](https://langfuse.com)
 [![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)](https://playwright.dev)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://opencv.org)
 
@@ -85,6 +88,34 @@ I design and ship **production-grade software systems**, from real-time streamin
 ---
 
 ## Featured Projects
+
+### [VoltCart Assistant](https://github.com/premtheganesh/VoltCart_Assistant__RAG_Chatbot)
+**Production-Style RAG Support Agent** · Python, LangGraph, FastAPI, Next.js, PostgreSQL + pgvector, Langfuse
+
+A customer-support agent for a fictional electronics retailer, built the way a real one would have to be built. A **LangGraph** graph guards, routes and rewrites every message before dispatching it to a product, policy, order, handoff or smalltalk path.
+
+**Retrieval is hybrid and measured.** Meaning-based search over **pgvector** (HNSW) and keyword search over Postgres full-text (GIN) are merged with **Reciprocal Rank Fusion**, then reranked by a **cross-encoder**. A tuned relevance gate makes the bot say "I don't know" and offer a human instead of answering from a weak match, and every answer carries `[n]` citations. Documents enter through structure-aware parsing of PDF, DOCX and HTML with chunks that keep their section headings, and incremental ingestion where content hashes skip unchanged files.
+
+**The model is kept out of anything that must be correct.** It can only call predefined tools and never writes SQL. Order status is released only after the order number *and* its email match, verified **in code, never by the LLM**, with a three-attempt lockout. Around that sit layered guardrails: card numbers and SSNs redacted before any model sees them, a safety classifier with a backup, prompt rules that reject fake "system updates", and optional grounding and output checks. Timeouts, retries, model fallbacks and a circuit breaker mean a dead reranker slows answers down instead of breaking them.
+
+**Everything is graded against fixed targets**, over **122 golden questions** covering 9 categories and 35 edge-case types (typos, follow-ups, false premises, calculations, another language, order security) plus **32 attack and look-alike messages**. Answer quality is judged by a different model from the one that answers.
+
+| Metric | Result | Target |
+|---|---|---|
+| Retrieval hit rate @5 | **0.99** (MRR 0.93) | ≥ 0.85 |
+| Faithfulness (claims supported by sources) | **0.99** | ≥ 0.85 |
+| Refusal accuracy | **1.00** | ≥ 0.90 |
+| Routing accuracy | **0.99** | ≥ 0.90 |
+| Answer correctness (LLM judge) | **0.85** | ≥ 0.80 |
+| Guardrails: attacks handled | **24 / 24** | ≥ 90% |
+| Harmless messages wrongly blocked | **0 / 8** | 0 |
+| Data leaks · order-verification bypasses | **0 · 0** | 0 |
+
+The evals earned their keep by catching real defects, which were then fixed: a reranker call that could hang for 30 minutes, a router that classified gaming questions as off-topic, and a refund calculation that missed a fee. **~1,600 backend tests** plus frontend unit tests, **Langfuse** tracing with one trace per answer and thumbs up/down recorded as scores, an embeddable widget, and a one-command Docker start.
+
+`LangGraph` `RAG` `pgvector` `Hybrid Search` `Reciprocal Rank Fusion` `Cross-Encoder Reranking` `Guardrails` `PII Redaction` `LLM-as-Judge` `Evals` `FastAPI` `Next.js` `Langfuse` `Docker`
+
+---
 
 ### [TrendScout AI](https://github.com/premtheganesh/TrendScout-AI)
 **Market Intelligence Platform** · Python, FastAPI, Next.js, MongoDB, Neo4j, FAISS
