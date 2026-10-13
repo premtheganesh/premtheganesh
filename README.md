@@ -92,26 +92,7 @@ I design and ship **production-grade software systems**, from real-time streamin
 ### [VoltCart Assistant](https://github.com/premtheganesh/VoltCart_Assistant__RAG_Chatbot)
 **Production-Style RAG Support Agent** · Python, LangGraph, FastAPI, Next.js, PostgreSQL + pgvector, Langfuse
 
-A customer-support agent for a fictional electronics retailer, built the way a real one would have to be built. A **LangGraph** graph guards, routes and rewrites every message before dispatching it to a product, policy, order, handoff or smalltalk path.
-
-**Retrieval is hybrid and measured.** Meaning-based search over **pgvector** (HNSW) and keyword search over Postgres full-text (GIN) are merged with **Reciprocal Rank Fusion**, then reranked by a **cross-encoder**. A tuned relevance gate makes the bot say "I don't know" and offer a human instead of answering from a weak match, and every answer carries `[n]` citations. Documents enter through structure-aware parsing of PDF, DOCX and HTML with chunks that keep their section headings, and incremental ingestion where content hashes skip unchanged files.
-
-**The model is kept out of anything that must be correct.** It can only call predefined tools and never writes SQL. Order status is released only after the order number *and* its email match, verified **in code, never by the LLM**, with a three-attempt lockout. Around that sit layered guardrails: card numbers and SSNs redacted before any model sees them, a safety classifier with a backup, prompt rules that reject fake "system updates", and optional grounding and output checks. Timeouts, retries, model fallbacks and a circuit breaker mean a dead reranker slows answers down instead of breaking them.
-
-**Everything is graded against fixed targets**, over **122 golden questions** covering 9 categories and 35 edge-case types (typos, follow-ups, false premises, calculations, another language, order security) plus **32 attack and look-alike messages**. Answer quality is judged by a different model from the one that answers.
-
-| Metric | Result | Target |
-|---|---|---|
-| Retrieval hit rate @5 | **0.99** (MRR 0.93) | ≥ 0.85 |
-| Faithfulness (claims supported by sources) | **0.99** | ≥ 0.85 |
-| Refusal accuracy | **1.00** | ≥ 0.90 |
-| Routing accuracy | **0.99** | ≥ 0.90 |
-| Answer correctness (LLM judge) | **0.85** | ≥ 0.80 |
-| Guardrails: attacks handled | **24 / 24** | ≥ 90% |
-| Harmless messages wrongly blocked | **0 / 8** | 0 |
-| Data leaks · order-verification bypasses | **0 · 0** | 0 |
-
-The evals earned their keep by catching real defects, which were then fixed: a reranker call that could hang for 30 minutes, a router that classified gaming questions as off-topic, and a refund calculation that missed a fee. **~1,600 backend tests** plus frontend unit tests, **Langfuse** tracing with one trace per answer and thumbs up/down recorded as scores, an embeddable widget, and a one-command Docker start.
+Customer-support agent where a **LangGraph** graph guards, routes and rewrites every message before dispatching it to a product, policy, order or handoff path. Retrieval is hybrid: **pgvector** for meaning and Postgres full-text for keywords, fused by **Reciprocal Rank Fusion** and reranked by a **cross-encoder**, with a relevance gate that answers "I don't know" rather than guess from a weak match. The model only calls predefined tools and never writes SQL; order data is released after verification **in code, never by the LLM**. Layered guardrails add PII redaction, a safety classifier and prompt rules. Everything is graded against fixed targets over **122 golden questions** and **32 attack messages**: retrieval **hit@5 0.99**, **faithfulness 0.99**, **refusal accuracy 1.00**, **24/24 attacks handled**, **zero data leaks**. **~1,600 tests** and **Langfuse** tracing on every answer.
 
 `LangGraph` `RAG` `pgvector` `Hybrid Search` `Reciprocal Rank Fusion` `Cross-Encoder Reranking` `Guardrails` `PII Redaction` `LLM-as-Judge` `Evals` `FastAPI` `Next.js` `Langfuse` `Docker`
 
